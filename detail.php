@@ -54,8 +54,10 @@
 
     $preference->payment_methods = array(
         "excluded_payment_types" => array(
-          array("id" => "amex"),
-          array("id" => "atm")
+            array("id" => "atm")
+        ),
+        "excluded_payment_methods" => array(
+            array("id" => "amex")
         ),
         "installments" => 6
     );
@@ -195,7 +197,7 @@
                                         </h3>
                                     </div>
 
-                                    <form method="GET" action="<?php echo $preference->sandbox_init_point; ?>">
+                                    <form method="GET" action="<?php echo $preference->init_point; ?>">
                                         <button type="submit" class="mercadopago-button" formmethod="post">Pagar la compra</button>
                                     </form>
                                 </div>
