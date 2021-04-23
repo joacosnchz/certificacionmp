@@ -1,0 +1,7 @@
+{
+    "name": "joacosnchz/certificacionmp",
+    "type": "project",
+    "require": {
+        "mercadopago/dx-php": "2.2.1"
+    }
+}
